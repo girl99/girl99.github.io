@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、安装 Git二、安装 Node.js三、安装Hexo说明#####1. Hexo 的安装需要借助Node.js 的npm 命令来操作 #####2. 操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入： npm install -g hexo //  安装  npm uninstall -g hexo //  卸载 四、安装 Hexo 步骤1. 先选择一个盘符下新建一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2018/01/07/Hexo搭建个人博客/index.html">
+<meta property="og:site_name" content="ǰ������">
+<meta property="og:description" content="一、安装 Git二、安装 Node.js三、安装Hexo说明#####1. Hexo 的安装需要借助Node.js 的npm 命令来操作 #####2. 操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入： npm install -g hexo //  安装  npm uninstall -g hexo //  卸载 四、安装 Hexo 步骤1. 先选择一个盘符下新建一个">
+<meta property="og:updated_time" content="2018-01-07T11:36:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo搭建个人博客">
+<meta name="twitter:description" content="一、安装 Git二、安装 Node.js三、安装Hexo说明#####1. Hexo 的安装需要借助Node.js 的npm 命令来操作 #####2. 操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入： npm install -g hexo //  安装  npm uninstall -g hexo //  卸载 四、安装 Hexo 步骤1. 先选择一个盘符下新建一个">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/07/Hexo搭建个人博客/"/>
+
+
+
+
+
+  <title>Hexo搭建个人博客 | ǰ������</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ǰ������</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/07/Hexo搭建个人博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ǰ������">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo搭建个人博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-07T19:11:16+08:00">
+                2018-01-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、安装-Git"><a href="#一、安装-Git" class="headerlink" title="一、安装 Git"></a>一、安装 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></h2><h2 id="二、安装-Node-js"><a href="#二、安装-Node-js" class="headerlink" title="二、安装 Node.js"></a>二、安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></h2><h2 id="三、安装Hexo说明"><a href="#三、安装Hexo说明" class="headerlink" title="三、安装Hexo说明"></a>三、安装Hexo说明</h2><p>#####1. Hexo 的安装需要借助Node.js 的npm 命令来操作</p>
+<p>#####2. 操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入：</p>
+<pre><code>npm install -g hexo //  安装
+
+npm uninstall -g hexo //  卸载
+</code></pre><h2 id="四、安装-Hexo-步骤"><a href="#四、安装-Hexo-步骤" class="headerlink" title="四、安装 Hexo 步骤"></a>四、安装 Hexo 步骤</h2><h5 id="1-先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F-blog-（后续的操作大多在这个文件夹里进行）；"><a href="#1-先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F-blog-（后续的操作大多在这个文件夹里进行）；" class="headerlink" title="1. 先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F:\blog （后续的操作大多在这个文件夹里进行）；"></a>1. 先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F:\blog （后续的操作大多在这个文件夹里进行）；</h5><p>#####2. 进入blog文件夹单击右键，单击鼠标右键，选择Git bash命令，在里面输入：</p>
+<pre><code>npm install -g hexo //  全局安装 hexo
+</code></pre><p>#####3. 检查是否安装成功</p>
+<pre><code>hexo -v
+</code></pre><p>#####4. 初始化 hexo</p>
+<pre><code>hexo init
+</code></pre><p>   说明：最后出现呢“Start blogging with Hexo！” 即初始化成功</p>
+<p>#####5. 安装 组件</p>
+<pre><code>npm install
+</code></pre><p>#####6. 首次 体验 Hexo</p>
+<pre><code>hexo g
+</code></pre><p>#####7. 开启服务器 访问 Hexo</p>
+<pre><code>hexo s
+</code></pre><p>说明：出现访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即成功</p>
+<p>#####8. 若页面无法跳转，可能是端口号被占用，执行ctrl+c 停止服务器，接着执行命令行来改变端口号</p>
+<pre><code>hexo server -p 5000 // 端口号自己定
+</code></pre><p>说明：出现访问 <a href="http://localhost:5000/" target="_blank" rel="noopener">http://localhost:5000/</a> 即成功</p>
+<p>##五、部署远程博客 ##</p>
+<p>#####1.  注册<a href="https://github.com/" target="_blank" rel="noopener">Github</a>账号</p>
+<p>因为是托管到Github上，所以第一步需要注册一个账号。已有账号的登录即可</p>
+<p>#####2.  建立和用户名相对应的仓库</p>
+<p>以我的例子来说，我的用户名是girl99,那么我的仓库就必须是girl99.github.io，否则可能就不成功。</p>
+<p>#####3.  配置SSH公钥<br>  远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：</p>
+<p>  (1) 设置你的邮箱和用户名：</p>
+<pre><code>git config --global user.email &quot;lemoncode@qq.com&quot;
+git config --global user.name &quot;girl99&quot;
+</code></pre><p>  (2) 生成密钥，设置密码，输入的密码不显示（也可以不设置，按三次回车，密码为空）</p>
+<pre><code>ssh-keygen -t rsa -C &quot;lemoncode@qq.com&quot;
+</code></pre><p>  说明：上述的命令成功后，会得到id_rsa和id_rsa.pub两个文件，可能在C:\Users\Administrator.ssh文件夹里。 没有的话搜索下。</p>
+<p>  (3) 把SSH密钥添加到Github上</p>
+<p>  说明：登陆Github后，点击settings，然后进入SSH keys，title 写一个自己能记住的，把id_rsa.pub文件里内容粘贴进去就OK。</p>
+<p>#####4.  修改配置文件<br>(1) 编辑F:blog目录下的配置文件_config.yml,在最下面输入以下内容，注意把里面的girl99替换成你的用户名</p>
+<pre><code>deploy:
+  type: git
+  repository: https://github.com/girl99/girl99.github.io.git
+  branch: master
+</code></pre><p>(2) 部署远程博客，输入以下命令</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>(3) 出现下面的提示表示部署成功</p>
+<pre><code>INFO Deploy done: git
+</code></pre><p>(4) 若hexo d 没有部署成功,再次修改F:blog目录下的配置文件_config.yml，改成这样</p>
+<pre><code>deploy:
+  type: git
+  repository: git@github.com:girl99/girl99.github.io.git
+  branch: master
+</code></pre><p>再次执行：</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>(3) 若但是在部署的时候遇到 ERROR Deployer not found: github  的错误,运行以下指令</p>
+<pre><code>npm install hexo-deployer-git --save  
+</code></pre><p>继续运行指令</p>
+<pre><code>hexo g  
+hexo d
+</code></pre><h2 id="五、部署完成，访问远程博客"><a href="#五、部署完成，访问远程博客" class="headerlink" title="五、部署完成，访问远程博客"></a>五、部署完成，访问远程博客</h2><p><a href="https://girl99.github.io/" target="_blank" rel="noopener">https://girl99.github.io/</a></p>
+<h1 id="Yes"><a href="#Yes" class="headerlink" title="Yes!"></a>Yes!</h1>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">zhang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、安装-Git"><span class="nav-number">1.</span> <span class="nav-text">一、安装 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装-Node-js"><span class="nav-number">2.</span> <span class="nav-text">二、安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、安装Hexo说明"><span class="nav-number">3.</span> <span class="nav-text">三、安装Hexo说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、安装-Hexo-步骤"><span class="nav-number">4.</span> <span class="nav-text">四、安装 Hexo 步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F-blog-（后续的操作大多在这个文件夹里进行）；"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">1. 先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F:\blog （后续的操作大多在这个文件夹里进行）；</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、部署完成，访问远程博客"><span class="nav-number">5.</span> <span class="nav-text">五、部署完成，访问远程博客</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Yes"><span class="nav-number"></span> <span class="nav-text">Yes!</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
