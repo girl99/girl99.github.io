@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="饿了么," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="前端喵酱">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="一、$mount()手动挂载当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。new Vue({    router,    render: h =&amp;gt; h(App)  }).$mount(&amp;quot;#app&amp;quot;);new Vue({   el: &amp;#39;#app&amp;#39;,   router,">
+<meta name="keywords" content="饿了么">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue（一）数据准备">
+<meta property="og:url" content="http://yoursite.com/2018/01/08/Vue（一）数据准备/index.html">
 <meta property="og:site_name" content="前端喵酱">
+<meta property="og:description" content="一、$mount()手动挂载当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。new Vue({    router,    render: h =&amp;gt; h(App)  }).$mount(&amp;quot;#app&amp;quot;);new Vue({   el: &amp;#39;#app&amp;#39;,   router,">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-09T00:19:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端喵酱">
+<meta name="twitter:title" content="Vue（一）数据准备">
+<meta name="twitter:description" content="一、$mount()手动挂载当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。new Vue({    router,    render: h =&amp;gt; h(App)  }).$mount(&amp;quot;#app&amp;quot;);new Vue({   el: &amp;#39;#app&amp;#39;,   router,">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/08/Vue（一）数据准备/"/>
 
 
 
 
 
-  <title>前端喵酱</title>
+  <title>Vue（一）数据准备 | 前端喵酱</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/08/Vue（一）数据准备/" itemprop="url">Vue（一）数据准备</a></h1>
+          <h1 class="post-title" itemprop="name headline">Vue（一）数据准备</h1>
         
 
         <div class="post-meta">
@@ -298,9 +300,7 @@
       
 
       
-        
-          
-            <h4 id="一、-mount-手动挂载"><a href="#一、-mount-手动挂载" class="headerlink" title="一、$mount()手动挂载"></a>一、$mount()手动挂载</h4><h5 id="当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm-mount-方法来挂载。"><a href="#当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm-mount-方法来挂载。" class="headerlink" title="当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。"></a>当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。</h5><p><code>new Vue({
+        <h4 id="一、-mount-手动挂载"><a href="#一、-mount-手动挂载" class="headerlink" title="一、$mount()手动挂载"></a>一、$mount()手动挂载</h4><h5 id="当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm-mount-方法来挂载。"><a href="#当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm-mount-方法来挂载。" class="headerlink" title="当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。"></a>当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。</h5><p><code>new Vue({
    router,
    render: h =&gt; h(App)
  }).$mount(&quot;#app&quot;);</code><br><code>new Vue({
@@ -323,8 +323,6 @@
 <h5 id="2-引入axios组件"><a href="#2-引入axios组件" class="headerlink" title="(2) 引入axios组件"></a>(2) 引入axios组件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import axios from &apos;axios&apos;</span><br></pre></td></tr></table></figure>
 <h5 id="3-axios-请求数据（在此之前创建一个接受数据的对sellerobj）"><a href="#3-axios-请求数据（在此之前创建一个接受数据的对sellerobj）" class="headerlink" title="(3) axios 请求数据（在此之前创建一个接受数据的对sellerobj）"></a>(3) axios 请求数据（在此之前创建一个接受数据的对sellerobj）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line"> //  获取数据 准备  返回一个对象，后台获取数据后 赋予 该对象</span><br><span class="line">   data ()&#123;</span><br><span class="line">   	 return &#123;</span><br><span class="line">   	 	 sellerobj:&#123;&#125;</span><br><span class="line">   	 &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   created ()&#123; //  创建之前 请求数据</span><br><span class="line">   	 axios.get(&apos;static/data.json&apos;).then((result) =&gt; &#123;</span><br><span class="line">   	  	 console.log(result) //  控制台检查  数据存储在  result.data 里  </span><br><span class="line">   	  	this.sellerobj = result.data.seller //  将数据存到sellerobj里  	 	</span><br><span class="line">   	  &#125;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="Yes"><a href="#Yes" class="headerlink" title="Yes!"></a>Yes!</h1><h3 id="后续更新…"><a href="#后续更新…" class="headerlink" title="后续更新…"></a>后续更新…</h3>
-          
-        
       
     </div>
     
@@ -339,321 +337,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/08/Hexo安装主题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="前端喵酱">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/08/Hexo安装主题/" itemprop="url">Hexo安装主题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-08T13:52:04+08:00">
-                2018-01-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/饿了么/" rel="tag"># 饿了么</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="一、安装主题"><a href="#一、安装主题" class="headerlink" title="一、安装主题"></a>一、安装主题</h2><h5 id="在博客目录D-hexo下右键点击Git-Bash，输入以下命令。其他的主题也类似操作。"><a href="#在博客目录D-hexo下右键点击Git-Bash，输入以下命令。其他的主题也类似操作。" class="headerlink" title="在博客目录D:\hexo下右键点击Git Bash，输入以下命令。其他的主题也类似操作。"></a>在博客目录D:\hexo下右键点击Git Bash，输入以下命令。其他的主题也类似操作。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next</span><br></pre></td></tr></table></figure>
-<h2 id="二、使用主题"><a href="#二、使用主题" class="headerlink" title="二、使用主题"></a>二、使用主题</h2><h5 id="修改博客目录D-blog-config-yml中的theme属性，将其设置为next。"><a href="#修改博客目录D-blog-config-yml中的theme属性，将其设置为next。" class="headerlink" title="修改博客目录D:\blog_config.yml中的theme属性，将其设置为next。"></a>修改博客目录D:\blog_config.yml中的theme属性，将其设置为next。</h5><h2 id="三、导航栏乱码问题"><a href="#三、导航栏乱码问题" class="headerlink" title="三、导航栏乱码问题"></a>三、导航栏乱码问题</h2><h5 id="修改博客目录D-blog-config-yml中的language设置为-zh-Hans-即可"><a href="#修改博客目录D-blog-config-yml中的language设置为-zh-Hans-即可" class="headerlink" title="修改博客目录D:\blog_config.yml中的language设置为 zh-Hans 即可"></a>修改博客目录D:\blog_config.yml中的language设置为 zh-Hans 即可</h5><h2 id="待更新…"><a href="#待更新…" class="headerlink" title="待更新…"></a>待更新…</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/07/Hexo搭建个人博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="前端喵酱">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/07/Hexo搭建个人博客/" itemprop="url">Hexo搭建个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T19:11:16+08:00">
-                2018-01-07
-              </time>
+              <a href="/2018/01/08/Hexo安装主题/" rel="next" title="Hexo安装主题">
+                <i class="fa fa-chevron-left"></i> Hexo安装主题
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="一、安装-Git"><a href="#一、安装-Git" class="headerlink" title="一、安装 Git"></a>一、安装 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></h2><h2 id="二、安装-Node-js"><a href="#二、安装-Node-js" class="headerlink" title="二、安装 Node.js"></a>二、安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></h2><h2 id="三、安装Hexo说明"><a href="#三、安装Hexo说明" class="headerlink" title="三、安装Hexo说明"></a>三、安装Hexo说明</h2><h5 id="（1）Hexo-的安装需要借助Node-js-的npm-命令来操作"><a href="#（1）Hexo-的安装需要借助Node-js-的npm-命令来操作" class="headerlink" title="（1）Hexo 的安装需要借助Node.js 的npm 命令来操作"></a>（1）Hexo 的安装需要借助Node.js 的npm 命令来操作</h5><h5 id="（2）操作的方式是在任意的位置单击鼠标右键，选择Git-bash命令，在里面输入："><a href="#（2）操作的方式是在任意的位置单击鼠标右键，选择Git-bash命令，在里面输入：" class="headerlink" title="（2）操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入："></a>（2）操作的方式是在任意的位置单击鼠标右键，选择Git bash命令，在里面输入：</h5><pre><code>npm install -g hexo //  安装
-
-npm uninstall -g hexo //  卸载
-</code></pre><h2 id="四、安装-Hexo-步骤"><a href="#四、安装-Hexo-步骤" class="headerlink" title="四、安装 Hexo 步骤"></a>四、安装 Hexo 步骤</h2><h5 id="（1）先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F-blog-（后续的操作大多在这个文件夹里进行）；"><a href="#（1）先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F-blog-（后续的操作大多在这个文件夹里进行）；" class="headerlink" title="（1）先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F:\blog （后续的操作大多在这个文件夹里进行）；"></a>（1）先选择一个盘符下新建一个文件夹，命名（英文字母），假设你是在F盘下建立了一个名叫blog的文件夹，那么路径就是F:\blog （后续的操作大多在这个文件夹里进行）；</h5><h5 id="（2）进入blog文件夹单击右键，单击鼠标右键，选择Git-bash命令，在里面输入："><a href="#（2）进入blog文件夹单击右键，单击鼠标右键，选择Git-bash命令，在里面输入：" class="headerlink" title="（2）进入blog文件夹单击右键，单击鼠标右键，选择Git bash命令，在里面输入："></a>（2）进入blog文件夹单击右键，单击鼠标右键，选择Git bash命令，在里面输入：</h5><pre><code>npm install -g hexo //  全局安装 hexo
-</code></pre><h5 id="（3）检查是否安装成功"><a href="#（3）检查是否安装成功" class="headerlink" title="（3）检查是否安装成功"></a>（3）检查是否安装成功</h5><pre><code>hexo -v
-</code></pre><h5 id="（4）初始化-hexo"><a href="#（4）初始化-hexo" class="headerlink" title="（4）初始化 hexo"></a>（4）初始化 hexo</h5><pre><code>hexo init
-</code></pre><p>   说明：最后出现呢“Start blogging with Hexo！” 即初始化成功</p>
-<h5 id="（5）安装-组件"><a href="#（5）安装-组件" class="headerlink" title="（5）安装 组件"></a>（5）安装 组件</h5><pre><code>npm install
-</code></pre><h5 id="（6）首次-体验-Hexo"><a href="#（6）首次-体验-Hexo" class="headerlink" title="（6）首次 体验 Hexo"></a>（6）首次 体验 Hexo</h5><pre><code>hexo g
-</code></pre><h5 id="（7）开启服务器-访问-Hexo"><a href="#（7）开启服务器-访问-Hexo" class="headerlink" title="（7）开启服务器 访问 Hexo"></a>（7）开启服务器 访问 Hexo</h5><pre><code>hexo s
-</code></pre><p>说明：出现访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即成功</p>
-<h5 id="（8）-若页面无法跳转，可能是端口号被占用，执行ctrl-c-停止服务器，接着执行命令行来改变端口号"><a href="#（8）-若页面无法跳转，可能是端口号被占用，执行ctrl-c-停止服务器，接着执行命令行来改变端口号" class="headerlink" title="（8） 若页面无法跳转，可能是端口号被占用，执行ctrl+c 停止服务器，接着执行命令行来改变端口号"></a>（8） 若页面无法跳转，可能是端口号被占用，执行ctrl+c 停止服务器，接着执行命令行来改变端口号</h5><pre><code>hexo server -p 5000 // 端口号自己定
-</code></pre><p>说明：出现访问 <a href="http://localhost:5000/" target="_blank" rel="noopener">http://localhost:5000/</a> 即成功</p>
-<h2 id="五、部署远程博客"><a href="#五、部署远程博客" class="headerlink" title="五、部署远程博客"></a>五、部署远程博客</h2><h5 id="（1）注册Github账号"><a href="#（1）注册Github账号" class="headerlink" title="（1）注册Github账号"></a>（1）注册<a href="https://github.com/" target="_blank" rel="noopener">Github</a>账号</h5><p>因为是托管到Github上，所以第一步需要注册一个账号。已有账号的登录即可</p>
-<h5 id="（2）建立和用户名相对应的仓库"><a href="#（2）建立和用户名相对应的仓库" class="headerlink" title="（2）建立和用户名相对应的仓库"></a>（2）建立和用户名相对应的仓库</h5><p>以我的例子来说，我的用户名是girl99,那么我的仓库就必须是girl99.github.io，否则可能就不成功。</p>
-<h5 id="（3）配置SSH公钥"><a href="#（3）配置SSH公钥" class="headerlink" title="（3）配置SSH公钥"></a>（3）配置SSH公钥</h5><p>  远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：</p>
-<blockquote>
-<p>设置你的邮箱和用户名：</p>
-</blockquote>
-<pre><code>git config --global user.email &quot;lemoncode@qq.com&quot;
-git config --global user.name &quot;girl99&quot;
-</code></pre><blockquote>
-<p> 生成密钥，设置密码，输入的密码不显示（也可以不设置，按三次回车，密码为空）</p>
-</blockquote>
-<pre><code>ssh-keygen -t rsa -C &quot;lemoncode@qq.com&quot;
-</code></pre><p>  说明：上述的命令成功后，会得到id_rsa和id_rsa.pub两个文件，可能在C:\Users\Administrator.ssh文件夹里。 没有的话搜索下。</p>
-<blockquote>
-<p>把SSH密钥添加到Github上</p>
-</blockquote>
-<p>  说明：登陆Github后，点击settings，然后进入SSH keys，title 写一个自己能记住的，把id_rsa.pub文件里内容粘贴进去就OK。</p>
-<h5 id="（4）修改配置文件"><a href="#（4）修改配置文件" class="headerlink" title="（4）修改配置文件"></a>（4）修改配置文件</h5><blockquote>
-<p>编辑F:blog目录下的配置文件_config.yml,在最下面输入以下内容，注意把里面的girl99替换成你的用户名</p>
-</blockquote>
-<pre><code>deploy:
-  type: git
-  repository: https://github.com/girl99/girl99.github.io.git
-  branch: master
-</code></pre><blockquote>
-<p>部署远程博客，输入以下命令</p>
-</blockquote>
-<pre><code>hexo g
-hexo d
-</code></pre><blockquote>
-<p>出现下面的提示表示部署成功</p>
-</blockquote>
-<pre><code>INFO Deploy done: git
-</code></pre><blockquote>
-<p>若hexo d 没有部署成功,再次修改F:blog目录下的配置文件_config.yml，改成这样</p>
-</blockquote>
-<pre><code>deploy:
-  type: git
-  repository: git@github.com:girl99/girl99.github.io.git
-  branch: master
-</code></pre><blockquote>
-<p>再次执行：</p>
-</blockquote>
-<pre><code>hexo g
-hexo d
-</code></pre><blockquote>
-<p>若但是在部署的时候遇到 ERROR Deployer not found: github  的错误,运行以下指令</p>
-</blockquote>
-<pre><code>npm install hexo-deployer-git --save  
-</code></pre><blockquote>
-<p>继续运行指令</p>
-</blockquote>
-<pre><code>hexo g  
-hexo d
-</code></pre><h2 id="五、部署完成，访问远程博客"><a href="#五、部署完成，访问远程博客" class="headerlink" title="五、部署完成，访问远程博客"></a>五、部署完成，访问远程博客</h2><p><a href="https://girl99.github.io/" target="_blank" rel="noopener">https://girl99.github.io/</a></p>
-<h1 id="Yes"><a href="#Yes" class="headerlink" title="Yes!"></a>Yes!</h1>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -663,10 +376,11 @@ hexo d
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -674,6 +388,10 @@ hexo d
 
 
           
+
+  
+
+
 
         </div>
         
@@ -694,8 +412,17 @@ hexo d
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -746,6 +473,22 @@ hexo d
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、-mount-手动挂载"><span class="nav-number">1.</span> <span class="nav-text">一、$mount()手动挂载</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm-mount-方法来挂载。"><span class="nav-number">1.1.</span> <span class="nav-text">当Vue实例没有el属性时，则该实例尚没有挂载到某个dom中；假如需要延迟挂载，可以在之后手动调用vm.$mount()方法来挂载。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#解释：-render-x-gt-x-App"><span class="nav-number">1.2.</span> <span class="nav-text">解释： render: x =&gt; x(App)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、mock数据"><span class="nav-number">2.</span> <span class="nav-text">二、mock数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#如果后端接口尚未开发完成，前端开发一般使用mock数据。"><span class="nav-number">2.1.</span> <span class="nav-text">如果后端接口尚未开发完成，前端开发一般使用mock数据。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意：新版的vue-cli-自动搭建的build-文件里没有dev-server-js-和-dev-client-js-，因此我们要在webpack-dev-conf-js-里配置"><span class="nav-number">2.2.</span> <span class="nav-text">注意：新版的vue-cli 自动搭建的build 文件里没有dev-server.js 和 dev-client.js ，因此我们要在webpack.dev.conf.js 里配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置如下："><span class="nav-number">2.3.</span> <span class="nav-text">配置如下：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-复制data-json-到该项目下"><span class="nav-number">2.4.</span> <span class="nav-text">(1) 复制data.json 到该项目下</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-找到bulid目录下-webpack-dev-conf-js-找到-const-portfinder-require-‘portfinder’-，在其下添加mock-数据"><span class="nav-number">2.5.</span> <span class="nav-text">(2) 找到bulid目录下 webpack.dev.conf.js 找到 const portfinder = require(‘portfinder’)，在其下添加mock  数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-接着找到-devServer-里的-watchOptions，其后紧跟"><span class="nav-number">2.6.</span> <span class="nav-text">(3)接着找到 devServer  里的 watchOptions，其后紧跟</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-设置保存后-npm-run-dev-运行-访问http-localhost-8080-api-seller-就可接收到-该路由对应的json-数据"><span class="nav-number">2.7.</span> <span class="nav-text">(4)设置保存后 npm run dev 运行  访问http://localhost:8080/api/seller  就可接收到 该路由对应的json 数据</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、关于路由-vue-router"><span class="nav-number">3.</span> <span class="nav-text">三、关于路由 vue-router</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直接定义路由"><span class="nav-number">4.</span> <span class="nav-text">* 直接定义路由</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-首先定义路由"><span class="nav-number">4.1.</span> <span class="nav-text">(1) 首先定义路由</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-创建路由实例"><span class="nav-number">4.2.</span> <span class="nav-text">(2) 创建路由实例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#路由实例方法"><span class="nav-number">4.3.</span> <span class="nav-text">路由实例方法:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-创建vue-实例"><span class="nav-number">4.4.</span> <span class="nav-text">(3)创建vue 实例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-DOM-渲染"><span class="nav-number">4.5.</span> <span class="nav-text">(4)DOM 渲染</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#注意：查看效果时，发现动态的给当前路由-添加le一个router-link-active的类名-所以如果需要设置当前路由样式（比如：高亮）就可以直接在style里设置了"><span class="nav-number">4.6.</span> <span class="nav-text">注意：查看效果时，发现动态的给当前路由 添加le一个router-link-active的类名,所以如果需要设置当前路由样式（比如：高亮）就可以直接在style里设置了</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（main-js）引入路由组件"><span class="nav-number">5.</span> <span class="nav-text">（main.js）引入路由组件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-引入路由文件"><span class="nav-number">5.1.</span> <span class="nav-text">(1) 引入路由文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-创建路由实例-定义路由组件"><span class="nav-number">5.2.</span> <span class="nav-text">(2) 创建路由实例 定义路由组件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-创建vue实例并挂载"><span class="nav-number">5.3.</span> <span class="nav-text">(3) 创建vue实例并挂载</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、axios-请求数据"><span class="nav-number">6.</span> <span class="nav-text">四、axios 请求数据</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-安装-axios"><span class="nav-number">6.1.</span> <span class="nav-text">(1) 安装 axios</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-引入axios组件"><span class="nav-number">6.2.</span> <span class="nav-text">(2) 引入axios组件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-axios-请求数据（在此之前创建一个接受数据的对sellerobj）"><span class="nav-number">6.3.</span> <span class="nav-text">(3) axios 请求数据（在此之前创建一个接受数据的对sellerobj）</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Yes"><span class="nav-number"></span> <span class="nav-text">Yes!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#后续更新…"><span class="nav-number"></span> <span class="nav-text">后续更新…</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -879,6 +622,10 @@ hexo d
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
